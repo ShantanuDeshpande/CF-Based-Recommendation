@@ -5,10 +5,12 @@ import java.io.PrintWriter;
 
 class recommender
 {
+	// Initialize the comma delimiter and new line separator.
 	private static final String COMMA_DELIMITER = ",";
 	private static final String NEW_LINE_SEPARATOR = "\n";
 
-	public static int[][] CreateMatrix()throws FileNotFoundException, IOException
+	// Method to create a matrix for recommendations.
+	private static int[][] CreateMatrix()throws Exception
 	{
 		// Initialize the matrix with -1 for all elements
 		int[][] matrix = new int[6040][3952];
